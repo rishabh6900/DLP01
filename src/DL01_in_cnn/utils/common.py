@@ -74,7 +74,7 @@ def load_json(path: Path) -> ConfigBox:
     
     """
     
-    with open(path) as F:
+    with open(path) as f:
         content = json.loads(f)
 
     logger.info(f"json file loaded succesfully from : {path}")
